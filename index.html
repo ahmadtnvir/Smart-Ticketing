@@ -351,22 +351,22 @@
               <div class="flex gap-5 justify-between items-center">
                 <div class="flex-1 border-r-2 border-dashed pr-4">
                   <div class="border-b-2 border-dashed pb-2 text-start">
-                    <h4>Select Your Seat</h4>
+                    <h4 class="text-[#030712] raleway-font font-semibold text-2xl">Select Your Seat</h4>
                   </div>
                   <div
                     class="flex justify-between items-center border-b-2 border-dashed pb-2 mt-5"
                   >
                     <div class="flex gap-3 justify-center items-center">
                       <img src="./images/seat-gray.png" alt="" />
-                      <p>Available</p>
+                      <p class="text-[#03071280] inter-all font-medium text-lg">Available</p>
                     </div>
                     <div class="flex gap-3 justify-center items-center">
                       <img src="./images/seat-green-filled.png" alt="" />
-                      <p>Selected</p>
+                      <p class="text-[#1DD100] inter-all font-medium text-lg">Selected</p>
                     </div>
                   </div>
                   <div class="text-end mt-5">
-                    <button class="btn btn-square w-[110px] h-[56px]">
+                    <button class="btn btn-square w-[100px] h-[50px]">
                       <img
                         src="./images/tabler-icon-steering-wheel.svg"
                         alt=""
@@ -666,59 +666,87 @@
                 </div>
                 <div class="flex-1">
                   <div class="border-b-2 border-dashed pb-2 text-start">
-                    <h4>Select Your Seat</h4>
+                    <h4 class="text-[#030712] raleway-font font-semibold text-2xl">Select Your Seat</h4>
                   </div>
-                  <div class="bg-[#F7F8F8] mt-5 rounded-2xl">
-                    <div class="flex justify-around items-center border-b-2 border-dashed pb-2">
-                      <p>Seat</p>
-                      <p>Class</p>
-                      <p>Price</p>
+                  <div class="bg-[#F7F8F8] mt-5 rounded-2xl p-5">
+                    <div
+                      class="flex justify-around items-center border-b-2 border-dashed pb-2 my-3"
+                    >
+                    <div class="flex gap-1 justify-center items-center ">
+                      <p class="text-[#030712] inter-all font-medium">Seat</p>
+                      <button class="btn btn-xs text-[#FFFFFF] inter-bold text-xs bg-[#1DD100]">0</button>
                     </div>
-                    <div class="border-b-2 border-solid pb-2">
-                      <div class="flex justify-around items-center">
-                        <span>C2</span>
-                        <p>Economy</p>
-                        <span>550</span>
+                      
+                      <p class="text-[#030712] inter-all font-medium">Class</p>
+                      <p class="text-[#030712] inter-all font-medium">Price</p>
+                    </div>
+                    <div class="border-b-2 border-solid pb-2 space-y-3">
+                      <div class="flex justify-around items-center mt-3">
+                        <span class="text-[#03071299] inter-font">C2</span>
+                        <p class="text-[#03071299] inter-font">Economy</p>
+                        <span class="text-[#03071299] inter-font">550</span>
                       </div>
                       <div class="flex justify-around items-center">
-                        <span>C2</span>
-                        <p>Economy</p>
-                        <span>550</span>
+                        <span class="text-[#03071299] inter-font">C2</span>
+                        <p class="text-[#03071299] inter-font">Economy</p>
+                        <span class="text-[#03071299] inter-font">550</span>
                       </div>
                     </div>
-                    <div class="flex justify-between items-center">
-                      <span>Total Price</span>
-                      <span>BDT 1100</span>
+                    <div class="flex justify-around items-center my-3">
+                      <span class="text-[#030712] inter-all font-medium">Total Price</span>
+                      <span></span>
+                      <span class="text-[#030712] inter-all font-medium">BDT 1100</span>
                     </div>
+                    <div class="bg-[#FFFFFF] rounded-xl flex justify-between items-center py-2 px-2 w-[400px] my-5 mx-auto ">
+                      <input class="outline-none" type="text" placeholder="Have any copupon?" />
+                      <button class="btn bg-[#1DD100]">Apply</button>
+                      <!-- <button class="btn btn-sm bg-[#1DD100]">Small</button> -->
+                    </div>
+                    <div class="flex justify-around items-center">
+                      <span class="text-[#030712] inter-all font-medium">Grand Total</span>
+                      <span></span>
+                      <span class="text-[#030712] inter-all font-medium">BDT 1100</span>
+                    </div>
+                    
+                  </div>
+                  <div class="mt-5">
+                    <form class="text-start">
+                      <label class="text-[#030712] inter-all font-semibold" for="name"
+                        >Passenger Name* <br />
+                        <input
+                          id="name"
+                          class="w-full outline-none py-4 px-3 bg-[#FFFFFF] border-2 rounded-xl text-[#03071266] inter-font my-4"
+                          type="text"
+                          placeholder="Enter Your Name..."
+                        />
+                      </label>
+                      <br />
+                      <label class="text-[#030712] inter-all font-semibold" for="number"
+                        >Phone Number* <br />
+                        <input
+                          id="number"
+                          class="w-full outline-none py-4 px-3 bg-[#FFFFFF] border-2 rounded-xl text-[#03071266] inter-font my-4"
+                          type="number"
+                          placeholder="Enter Your Phone Number..."
+                        />
+                      </label>
+                      <br />
+                      <label class="text-[#030712] inter-all font-semibold" for="email"
+                        >Email ID <br />
+                        <input
+                          id="email"
+                          class="w-full outline-none py-4 px-3 bg-[#FFFFFF] border-2 rounded-xl text-[#03071266] inter-font my-4"
+                          type="email"
+                          placeholder="Enter Your Email..."
+                        />
+                      </label>
+                    </form>
                     <div>
-                      <input type="text" placeholder="Have any copupon?">
-                      <button class="btn">Button</button>
+                      <button class="btn btn-block bg-[#1DD100] text-white raleway-font font-extrabold text-xl my-4">Next</button>
                     </div>
-                    <div class="flex justify-between items-center">
-                      <span>Grand Total</span>
-                      <span>BDT 1100</span>
-                    </div>
-                    <div>
-                      <form class="text-start">
-                        <label for="name">Passenger Name <br>
-                          <input id="name" type="text" placeholder="Enter Your Name...">
-                        </label>
-                        <br>
-                        <label for="number">Phone Number <br>
-                          <input id="number" type="text" placeholder="Enter Your Phone Number...">
-                        </label>
-                        <br>
-                        <label for="email">Email ID <br>
-                          <input id="email" type="text" placeholder="Enter Your Email...">
-                        </label>
-                      </form>
-                      <div>
-                        <button class="btn btn-block">block</button>
-                      </div>
-                      <div>
-                        <small><u>Terms and Conditions</u></small>
-                        <small><u>Cancellation Policy</u></small>
-                      </div>
+                    <div class="text-[#03071299] inter-font flex justify-around items-center">
+                      <small><u>Terms and Conditions</u></small>
+                      <small><u>Cancellation Policy</u></small>
                     </div>
                   </div>
                 </div>

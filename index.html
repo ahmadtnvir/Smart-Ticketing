@@ -118,10 +118,9 @@
                   within the app. The integrated testing features allow for a
                   streamlined.
                 </p>
-                <button
+                <button onclick="scrollToSection()"
                   class="btn border-none px-8 py-4 bg-[#1DD100] raleway-font font-bold text-[#030712]"
-                >
-                  Buy Tickets
+                >Buy Tickets
                 </button>
               </div>
             </div>
@@ -252,7 +251,7 @@
     </header>
 
     <main>
-      <section>
+      <section id="ticket-booking-details">
         <div class="border-t-2 border-[#1DD100] rounded-[64px] w-full">
           <div class="w-[90%] mt-20 mb-10 mx-auto text-center">
             <div class="space-y-5 w-[736px] mb-7 mx-auto">
@@ -284,12 +283,12 @@
                     </span>
                   </div>
                   <div>
-                    <button
+                    <div
                       class="btn bg-[#1DD10026] text-[#1DD100] inter-all font-medium text-lg"
                     >
                       <img src="./images/seat-green.png" alt="" />
-                      40 Seats left
-                    </button>
+                      <span id="seats-left">40</span> Seats left
+                    </div>
                   </div>
                 </div>
                 <div class="bg-[#F7F8F8] rounded-2xl px-5 space-y-5 pb-5 mt-10">
@@ -379,11 +378,14 @@
                       <div class="space-x-1">
                         <input
                           type="radio"
+                          onclick="clickSeats()"
                           aria-label="A1"
+                          id="A1"
                           class="btn w-[100px] h-[50px]"
                         />
                         <input
                           type="radio"
+                          onclick="clickSeats()"
                           aria-label="A2"
                           class="btn w-[100px] h-[50px]"
                         />
@@ -391,11 +393,13 @@
                       <div class="space-x-1">
                         <input
                           type="radio"
+                          onclick="clickSeats()"
                           aria-label="A3"
                           class="btn w-[100px] h-[50px]"
                         />
                         <input
                           type="radio"
+                          onclick="clickSeats()"
                           aria-label="A4"
                           class="btn w-[100px] h-[50px]"
                         />
@@ -408,11 +412,13 @@
                       <div class="space-x-1">
                         <input
                           type="radio"
+                          onclick="clickSeats()"
                           aria-label="B1"
                           class="btn w-[100px] h-[50px]"
                         />
                         <input
                           type="radio"
+                          onclick="clickSeats()"
                           aria-label="B2"
                           class="btn w-[100px] h-[50px]"
                         />
@@ -420,11 +426,13 @@
                       <div class="space-x-1">
                         <input
                           type="radio"
+                          onclick="clickSeats()"
                           aria-label="B3"
                           class="btn w-[100px] h-[50px]"
                         />
                         <input
                           type="radio"
+                          onclick="clickSeats()"
                           aria-label="B4"
                           class="btn w-[100px] h-[50px]"
                         />
@@ -437,11 +445,13 @@
                       <div class="space-x-1">
                         <input
                           type="radio"
+                          onclick="clickSeats()"
                           aria-label="C1"
                           class="btn w-[100px] h-[50px]"
                         />
                         <input
                           type="radio"
+                          onclick="clickSeats()"
                           aria-label="C2"
                           class="btn w-[100px] h-[50px]"
                         />
@@ -449,11 +459,13 @@
                       <div class="space-x-1">
                         <input
                           type="radio"
+                          onclick="clickSeats()"
                           aria-label="C3"
                           class="btn w-[100px] h-[50px]"
                         />
                         <input
                           type="radio"
+                          onclick="clickSeats()"
                           aria-label="C4"
                           class="btn w-[100px] h-[50px]]"
                         />
@@ -466,11 +478,13 @@
                       <div class="space-x-1">
                         <input
                           type="radio"
+                          onclick="clickSeats()"
                           aria-label="D1"
                           class="btn w-[100px] h-[50px]"
                         />
                         <input
                           type="radio"
+                          onclick="clickSeats()"
                           aria-label="D2"
                           class="btn w-[100px] h-[50px]"
                         />
@@ -478,11 +492,13 @@
                       <div class="space-x-1">
                         <input
                           type="radio"
+                          onclick="clickSeats()"
                           aria-label="D3"
                           class="btn w-[100px] h-[50px]"
                         />
                         <input
                           type="radio"
+                          onclick="clickSeats()"
                           aria-label="D4"
                           class="btn w-[100px] h-[50px]"
                         />
@@ -495,11 +511,13 @@
                       <div class="space-x-1">
                         <input
                           type="radio"
+                          onclick="clickSeats()"
                           aria-label="E1"
                           class="btn w-[100px] h-[50px]"
                         />
                         <input
                           type="radio"
+                          onclick="clickSeats()"
                           aria-label="E2"
                           class="btn w-[100px] h-[50px]"
                         />
@@ -507,11 +525,13 @@
                       <div class="space-x-1">
                         <input
                           type="radio"
+                          onclick="clickSeats()"
                           aria-label="E3"
                           class="btn w-[100px] h-[50px]"
                         />
                         <input
                           type="radio"
+                          onclick="clickSeats()"
                           aria-label="E4"
                           class="btn w-[100px] h-[50px]"
                         />
@@ -524,11 +544,13 @@
                       <div class="space-x-1">
                         <input
                           type="radio"
+                          onclick="clickSeats()"
                           aria-label="F1"
                           class="btn w-[100px] h-[50px]"
                         />
                         <input
                           type="radio"
+                          onclick="clickSeats()"
                           aria-label="F2"
                           class="btn w-[100px] h-[50px]"
                         />
@@ -536,11 +558,13 @@
                       <div class="space-x-1">
                         <input
                           type="radio"
+                          onclick="clickSeats()"
                           aria-label="F3"
                           class="btn w-[100px] h-[50px]"
                         />
                         <input
                           type="radio"
+                          onclick="clickSeats()"
                           aria-label="F4"
                           class="btn w-[100px] h-[50px]"
                         />
@@ -553,11 +577,13 @@
                       <div class="space-x-1">
                         <input
                           type="radio"
+                          onclick="clickSeats()"
                           aria-label="G1"
                           class="btn w-[100px] h-[50px]"
                         />
                         <input
                           type="radio"
+                          onclick="clickSeats()"
                           aria-label="G2"
                           class="btn w-[100px] h-[50px]"
                         />
@@ -565,11 +591,13 @@
                       <div class="space-x-1">
                         <input
                           type="radio"
+                          onclick="clickSeats()"
                           aria-label="G3"
                           class="btn w-[100px] h-[50px]"
                         />
                         <input
                           type="radio"
+                          onclick="clickSeats()"
                           aria-label="G4"
                           class="btn w-[100px] h-[50px]"
                         />
@@ -582,11 +610,13 @@
                       <div class="space-x-1">
                         <input
                           type="radio"
+                          onclick="clickSeats()"
                           aria-label="H1"
                           class="btn w-[100px] h-[50px]"
                         />
                         <input
                           type="radio"
+                          onclick="clickSeats()"
                           aria-label="H2"
                           class="btn w-[100px] h-[50px]"
                         />
@@ -594,11 +624,13 @@
                       <div class="space-x-1">
                         <input
                           type="radio"
+                          onclick="clickSeats()"
                           aria-label="H3"
                           class="btn w-[100px] h-[50px]"
                         />
                         <input
                           type="radio"
+                          onclick="clickSeats()"
                           aria-label="H4"
                           class="btn w-[100px] h-[50px]"
                         />
@@ -611,11 +643,13 @@
                       <div class="space-x-1">
                         <input
                           type="radio"
+                          onclick="clickSeats()"
                           aria-label="I1"
                           class="btn w-[100px] h-[50px]"
                         />
                         <input
                           type="radio"
+                          onclick="clickSeats()"
                           aria-label="I2"
                           class="btn w-[100px] h-[50px]"
                         />
@@ -623,11 +657,13 @@
                       <div class="space-x-1">
                         <input
                           type="radio"
+                          onclick="clickSeats()"
                           aria-label="I3"
                           class="btn w-[100px] h-[50px]"
                         />
                         <input
                           type="radio"
+                          onclick="clickSeats()"
                           aria-label="I4"
                           class="btn w-[100px] h-[50px]"
                         />
@@ -640,11 +676,13 @@
                       <div class="space-x-1">
                         <input
                           type="radio"
+                          onclick="clickSeats()"
                           aria-label="J1"
                           class="btn w-[100px] h-[50px]"
                         />
                         <input
                           type="radio"
+                          onclick="clickSeats()"
                           aria-label="J2"
                           class="btn w-[100px] h-[50px]"
                         />
@@ -652,11 +690,13 @@
                       <div class="space-x-1">
                         <input
                           type="radio"
+                          onclick="clickSeats()"
                           aria-label="J3"
                           class="btn w-[100px] h-[50px]"
                         />
                         <input
                           type="radio"
+                          onclick="clickSeats()"
                           aria-label="J4"
                           class="btn w-[100px] h-[50px]"
                         />
@@ -674,7 +714,7 @@
                     >
                     <div class="flex gap-1 justify-center items-center ">
                       <p class="text-[#030712] inter-all font-medium">Seat</p>
-                      <button class="btn btn-xs text-[#FFFFFF] inter-bold text-xs bg-[#1DD100]">0</button>
+                      <button class="btn btn-xs text-[#FFFFFF] inter-bold text-xs bg-[#1DD100]"><span id="initial-booked">0</span></button>
                     </div>
                       
                       <p class="text-[#030712] inter-all font-medium">Class</p>
@@ -682,7 +722,7 @@
                     </div>
                     <div class="border-b-2 border-solid pb-2 space-y-3">
                       <div class="flex justify-around items-center mt-3">
-                        <span class="text-[#03071299] inter-font">C2</span>
+                        <span id="seatSpan" class="text-[#03071299] inter-font">C2</span>
                         <p class="text-[#03071299] inter-font">Economy</p>
                         <span class="text-[#03071299] inter-font">550</span>
                       </div>
@@ -758,5 +798,6 @@
     </main>
     <!-- !>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Linking JS <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< -->
     <script src="./scripts/index.js"></script>
+    <script src="./scripts/utility.js"></script>
   </body>
 </html>
